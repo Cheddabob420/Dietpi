@@ -17,7 +17,7 @@ AUTO_SETUP_GLOBAL_PASSWORD=4201
 AUTO_SETUP_LOCALE=C.UTF-8
 
 # Keyboard layout e.g.: "gb" / "us" / "de" / "fr"
-AUTO_SETUP_KEYBOARD_LAYOUT=gb
+AUTO_SETUP_KEYBOARD_LAYOUT=us
 
 # Time zone e.g.: "Europe/London" / "America/New_York" | Full list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 AUTO_SETUP_TIMEZONE=America/New_York
@@ -44,7 +44,7 @@ AUTO_SETUP_NET_STATIC_DNS=9.9.9.9 149.112.112.112
 AUTO_SETUP_DHCP_TO_STATIC=1
 
 # Hostname
-AUTO_SETUP_NET_HOSTNAME=DietPi
+AUTO_SETUP_NET_HOSTNAME=food-lister
 
 # Force Ethernet speeds: 0=automatic speed | 10 = 10 Mbit/s | 100 = 100 Mbit/s etc.
 # - Use this when your Ethernet adapter has an unstable 1 Gbit/s link.
@@ -137,7 +137,7 @@ AUTO_SETUP_AUTOMATED=1
 # - Add as many software IDs as you wish, separated by space.
 # - DietPi will automatically install all dependencies, like ALSA/X11 for desktops, a webserver for web applications etc.
 # - E.g. the following (without the leading "#") will install the LXDE desktop, the TigerVNC server and the Kodi media centre automatically on first boot:
-AUTO_SETUP_INSTALL_SOFTWARE_ID=1 8 9 17 84 96 109 110 113 170 195 198
+AUTO_SETUP_INSTALL_SOFTWARE_ID=84
 
 #------------------------------------------------------------------------------------------------------
 ##### Misc DietPi program settings #####
@@ -302,8 +302,7 @@ SOFTWARE_XORG_DPI=96
 # Chromium
 SOFTWARE_CHROMIUM_RES_X=1280
 SOFTWARE_CHROMIUM_RES_Y=720
-SOFTWARE_CHROMIUM_AUTOSTART_URL=https://google.com
-
+SOFTWARE_CHROMIUM_AUTOSTART_URL=http://localhost:8080
 # Home Assistant
 # - Optional Python build dependencies and modules, possibly required for certain HA components
 #	Space separated list (no quotation!), will be installed together with Home Assistant automatically, if present
